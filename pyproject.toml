@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "heic2jpeg"
+version = "0.0.1"
+description = ""
+authors = ["Benjamin White"]
+license = "Proprietary"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pillow-heif = "^0.11.0"
+pillow = "^9.5.0"
+
+[tool.poetry.scripts]
+heic2jpeg = "heic2jpeg.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
